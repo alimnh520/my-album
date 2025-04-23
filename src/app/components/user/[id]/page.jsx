@@ -46,7 +46,7 @@ const page = () => {
     }, [render]);
 
     const handleLike = async (userId) => {
-        const audio = new Audio('/videoplayback.m4a');
+        const audio = new Audio('/1.mp3');
         audio.play();
         try {
             const response = await fetch('/api/user/liked', {
@@ -64,7 +64,7 @@ const page = () => {
     }
 
     const handleComment = async (userId) => {
-        const audio = new Audio('/videoplayback_2.m4a');
+        const audio = new Audio('/2.mp3');
         audio.play();
         try {
             const response = await fetch('/api/user/comment', {
